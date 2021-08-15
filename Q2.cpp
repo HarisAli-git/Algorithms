@@ -87,8 +87,7 @@ void merge(int arr[], int l, int m, int r)
 	left = right = NULL;
 }
 
-/* l is for left index and r is right index of the
-sub-array of arr to be sorted */
+/* l is for left index and r is right index of the sub-array of arr to be sorted */
 void mergeSort(int arr[], int l, int r)
 {
 	if (l < r)
@@ -105,8 +104,7 @@ void mergeSort(int arr[], int l, int r)
 	}
 }
 
-// iterative Modified ot TimSort function to sort the 
-// array[0...n-1] 
+// iterative Modified ot TimSort function to sort the array[0...n-1] 
 void Modified_mergeSort(int arr[], int l, int r)
 {
 	if (l < r)
@@ -155,7 +153,7 @@ int main()
 	cout << "\ndone\n!";
 	auto start = chrono::steady_clock::now();
 	
-	/* Do your stuff here */
+	/* Your code here */
 	
 	Modified_mergeSort(arr, 0, *n - 1);
 	auto end = chrono::steady_clock::now();
